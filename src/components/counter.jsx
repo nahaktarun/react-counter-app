@@ -24,9 +24,10 @@ class Counter extends Component {
   // }
   handleIncrement = () => {
     //use arrow function to solve the consturctor to bind event handlers
-    console.log("Increment Clicked", this);
+    //console.log("Increment Clicked", this);
     //obj.method()
     //function()
+    this.setState({ count: this.state.count + 1 }); //update the state in the view
   };
   render() {
     return (
